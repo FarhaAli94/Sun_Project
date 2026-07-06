@@ -37,4 +37,5 @@ environments:
     username: "prod_user"
     password: "prod_pass"
 
-    wego:
+  Bighath:
+    base_url: "https://www.bighaat.com/"
