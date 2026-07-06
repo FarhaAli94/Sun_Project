@@ -25,7 +25,7 @@ class TestMyHomePage(BaseTest):
         """
         Get production URL from config.yaml.
         """
-        env =Environment("prod")
+        env =Environment("Bighath")
         base_url = env.get_base_url()
 
         """
