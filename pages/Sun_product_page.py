@@ -16,8 +16,7 @@ class Product_Page(BasePage):
     @allure.step("Select product and add to cart")
     def selectproduct(self):
         self.click(self.select_prod)
-        sleep(5)
+
         self.click(self.add_cart)
-        sleep(5)
+
         self.click(self.click_ok)
-        sleep(5)

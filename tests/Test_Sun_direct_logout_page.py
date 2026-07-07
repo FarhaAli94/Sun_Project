@@ -14,12 +14,9 @@ class Test_Sun_direct_logout_page(BaseTest):
         env=Environment("Sun")
         self.driver.get(env.get_base_url())
         login_page=LoginPage(self.driver)
-        sleep(3)
         login_page.login(
             env.get_username(),
             env.get_password()
         )
-        sleep(5)
         direct=Direct_Logout(self.driver)
         direct.directlogout()
-        sleep(5)

@@ -16,10 +16,10 @@ class Add_Cart_Page(BasePage):
     @allure.step("remove product added to cart")
     def removeproduct(self):
         self.click(self.add_cart)
-        sleep(5)
+
         self.click(self.increment)
-        sleep(5)
+
         self.click(self.remove)
-        sleep(5)
+
         self.click(self.remove_ok)
-        sleep(5)
+

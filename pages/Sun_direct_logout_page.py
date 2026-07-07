@@ -1,4 +1,4 @@
-from time import sleep
+
 import allure
 from pages.base_page import BasePage
 
@@ -15,6 +15,6 @@ class Direct_Logout(BasePage):
     @allure.step("logout")
     def directlogout(self):
         self.click(self.direct_logout)
-        sleep(5)
+
         self.click(self.direct_logout_link)
-        sleep(5)
+

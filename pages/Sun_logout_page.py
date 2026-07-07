@@ -1,4 +1,4 @@
-from time import sleep
+
 import allure
 from pages.base_page import BasePage
 
@@ -15,6 +15,6 @@ class Logout_Page(BasePage):
     @allure.step("logout")
     def logoutlink(self):
         self.click(self.account_logout)
-        sleep(5)
+
         self.click(self.logout_link)
-        sleep(5)
+

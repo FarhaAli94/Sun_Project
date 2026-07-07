@@ -6,7 +6,6 @@ from pages.Sun_product_page import Product_Page
 from pages.Sun_add_cart_page import Add_Cart_Page
 from pages.Sun_logout_page import Logout_Page
 from tests.base_test import BaseTest
-from time import sleep
 import pytest
 
 @allure.feature("logout page")
@@ -16,23 +15,19 @@ class Test_Sun_logout_page(BaseTest):
         env=Environment("Sun")
         self.driver.get(env.get_base_url())
         login_page=LoginPage(self.driver)
-        sleep(3)
         login_page.login(
             env.get_username(),
             env.get_password()
         )
-        sleep(5)
+
         search = Search_Bar(self.driver)
         search.search_product("Golf Maroon")
 
         product_page = Product_Page(self.driver)
         product_page.selectproduct()
-        sleep(5)
 
         addcart=Add_Cart_Page(self.driver)
         addcart.removeproduct()
-        sleep(5)
 
         logout=Logout_Page(self.driver)
         logout.logoutlink()
-        sleep(5)

@@ -80,9 +80,9 @@ class BaseTest:
         options = ChromeOptions()
 
         # Use the PROJECT_ROOT constant defined at the top of the file
-        profile_path = PROJECT_ROOT / "automation_chrome_profile"
-        options.add_argument(f"--user-data-dir={profile_path}")
-        self.logger.info(f"Using dedicated Chrome profile: {profile_path}")
+        # profile_path = PROJECT_ROOT / "automation_chrome_profile"
+        # options.add_argument(f"--user-data-dir={profile_path}")
+        # self.logger.info(f"Using dedicated Chrome profile: {profile_path}")
 
         # --- ADDING YOUR SUGGESTED OPTIONS TO SUPPRESS POPUPS ---
         options.add_experimental_option("excludeSwitches", ["enable-automation"])

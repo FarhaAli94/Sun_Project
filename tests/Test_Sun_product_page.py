@@ -5,7 +5,6 @@ from pages.Sun_login_page import LoginPage
 from pages.Sun_search_page import Search_Bar
 from pages.Sun_product_page import Product_Page
 from tests.base_test import BaseTest
-from time import sleep
 
 
 class Test_Sun_product_page(BaseTest):
@@ -29,4 +28,3 @@ class Test_Sun_product_page(BaseTest):
 
         product_page = Product_Page(self.driver)
         product_page.selectproduct()
-        sleep(10)
