@@ -50,7 +50,7 @@ class BaseTest:
         yield
 
         with allure.step("Test Teardown"):
-            if request.node.rep_call.failed:
+            if hasattr(request.node, "rep_call") and request.node.rep_call.failed:
                 self._capture_allure_screenshot(request)
 
             log_content = log_stream.getvalue()

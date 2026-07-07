@@ -37,6 +37,8 @@ environments:
     username: "prod_user"
     password: "prod_pass"
 
+  Bighath:
+    base_url: "https://www.bighaat.com/"
   Sun:
     base_url: "https://www.sunumbrellas.in/"
     username: "farhas192@gmail.com"
